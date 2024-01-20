@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    border: border-box;
+    position: relative;
+}
+html,body{
+    position: relative;
+    height: 100%;
+    }
+
+    body {
+        background: #000000;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+#main{
+    position: fixed;
+    z-index: 19;
+}
+
+#page1{
+    height: 100vh;
+    width: 200vh;
+    background-position:center;
+    filter: brightness(10px);
+    -webkit-filter:brightness(10px);
+    /*filter: blur;
+    -webkit-filter:blur(1px);*/
+    background-size: cover;
+    background-image: /*radial-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(https://images.squarespace-cdn.com/content/v1/5d5728dc255291000172fa57/1565993287055-NAKP4BQL7W98X727JFNL/culture-espresso-home-2.jpg?format=2500w)*/url(https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFyaXMlMjBjYWZlfGVufDB8fDB8fHww);
+    justify-content: space-between;
+}
+
+#logo video{
+    height: 100px;
+    width: 200px;
+    
+}
+#logo{
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    gap: 180px;
+}
+h3{
+    color: #000000bb;
+    font-size:large;
+    text-transform:uppercase;
+    font-style: italic;
+    font-weight: bolder;
+    /*text-decoration:none;
+    text-align: justify;*/
+    font-weight: 400;
+    padding: 9px 15px;
+    border: 1px solid rgb(255, 255, 255);
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+h3::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+    left: 0;
+    bottom: -100%;
+    border-radius: 30px;
+    transition: all ease 0.3s;
+    /* color: white;
+    text-decoration: none;
+    z-index: 9;*/
+}
+
+h3:hover::after{
+    bottom: 0;
+    border-radius: 30px;
+}
+
+h3 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+h3:hover a{
+    color: #000000;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(0, 0, 0);
+    padding: 2vw 0vw;
+    /* margin: 2%;
+    right:  2%;*/
+    color: rgb(255, 255, 255);
+}
+
+.elem{
+    color:white; 
+    content: "";
+    height: 120px;
+    width: 100%;
+    position:relative;
+    border-top: 1px solid #2a2a2a;
+    border-bottom: 1px solid #2b2a2a;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+    
+}
+
+.elem h2{
+    content: "";
+    color: #5a5959;
+    font-style: italic;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color:#ffffff;
+    position: absolute;
+    left:0;
+    top:-100%;
+    transition: all ease 0.05s;
+    text-decoration: none;
+
+}
+
+.elem:hover .overlay{
+    top: 0;
+}
+
+#elem-container{
+top: 0%;
+}
+
+#fixed-image{
+    height: 32vh;
+    width:26vh;
+    background-color: rgb(148, 141, 121);
+    border-radius: 10px;
+    position: fixed;
+    z-index: 55;
+    left: 50%;
+    top: 51%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+#page3{
+    height: 90vh;
+    width: 200vh;
+    background-position:center;
+    filter: brightness(8px);
+    -webkit-filter:brightness(8px);
+    background-image: /*radial-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(https://images.squarespace-cdn.com/content/v1/5d5728dc255291000172fa57/1565993311354-W2IHXBDKF5XNKWV3ZM2Q/culture-espresso-home.jpg?format=2500w)*/ url(https://b.zmtcdn.com/data/collections/54a38c33ce8c62c7754e3f0b2fa6eb60_1695898233.png);
+    align-items:center;
+    background-size: cover ;
+    
+}
+h4{
+    color: white;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    font-style: italic;
+    font-size: x-large;
+}
+p{
+    color: rgb(255, 254, 254);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    padding-top:25px;
+    text-align: center;
+}
+
+/*#page4{
+    height: 60vh;
+    width: 100%;
+    background-position: relative;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    background-color: #fef8f8;
+    background-image:/*radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),*//*url(https://images.lifestyleasia.com/wp-content/uploads/2019/10/14173349/Blend_AvocadoToasts_credit_romain_buisson-min.jpg?tr=w-1366);*/
+
+
+
+#page5{
+    height: 500px;
+    width: 40%;
+    background-color: #000000;
+    /*bottom: 40%*/
+    
+    
+.swiper {
+        width: 1400px;
+        height: 500px;
+}    
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display:flexbox;
+      width: 100svi;
+      height: 400px;
+      object-fit:contain;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+#page6{
+    height: 75vh;
+    width: 100%;
+    background-image:url("Untitled\ design.jpg");
+    filter: brightness(20px);
+    -webkit-filter:(brightness(20px));
+    /*justify-content: center;
+    align-items: center;*/
+    
+    background-size:cover;
+    background-position: center;
+}
+
+
+
+
+footer{
+    background-color: rgb(0, 0, 0);
+    height: 35vh;
+    width:100% ;
+    bottom: 0;
+    position: absolute; 
+    left: 0; 
+    z-index: 10;
+    
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+    bottom: 10px;
+    
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(66, 66, 66);
+    margin: 10px;
+    border-radius: 50%;
+    justify-items: center;
+    align-items: center;
+    bottom: 40px;
+    
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: rgb(142, 133, 133);
+    opacity: 0.2;
+}
+
+.socialIcons a:hover{
+    
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    
+}
+
+.footerNav{
+    margin: 30px 0;
+    bottom: 0;
+    position: absolute; 
+    left: 0; 
+    z-index: 10;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a{
+    color: rgb(138, 138, 138);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.4;
+    transition: 0.9s;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+
+}
+.footerNav ul li a:hover{
+    opacity: 4 ;
+}
+.footerBottom{
+    background-color: rgb(122, 121, 124);
+    padding: 20px;
+    text-align: center;
+    bottom: 0%;
+}
+.footerBottom p{
+    color:rgb(0, 0, 0);
+    
+}
+.desiger{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight:bolder;
+    margin: 0px 7px;
+    font-style:normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
